@@ -1,0 +1,439 @@
+Start testing: Jan 09 07:01 Central Standard Time
+----------------------------------------------------------
+1/1 Testing: TMS_Tests
+1/1 Test: TMS_Tests
+Command: "C:/Users/Benni/CLionProjects/TMS_Emulation/cmake-build-debug/test_tms.exe"
+Directory: C:/Users/Benni/CLionProjects/TMS_Emulation/cmake-build-debug
+"TMS_Tests" start time: Jan 09 07:01 Central Standard Time
+Output:
+----------------------------------------------------------
+
+========================================
+  TMS TEST SUITE v3.3.0
+  Copyright (c) 2025 Bennie Shearer
+========================================
+
+=== Validation Tests ===
+  [OK] Valid 6-char volser
+  [OK] Valid volser with numbers
+  [OK] Valid 1-char volser
+  [OK] Reject 7+ char volser
+  [OK] Reject empty volser
+  [OK] Reject volser with hyphen
+  [OK] Reject volser with space
+  [OK] Valid dataset with dots
+  [OK] Valid production dataset
+  [OK] Valid 1-char dataset
+  [OK] Reject empty dataset
+  [OK] Valid dataset with dash/underscore
+  [OK] Valid tag with special chars
+  [OK] Simple valid tag
+  [OK] Reject empty tag
+  [OK] Reject tag with space
+  [OK] Valid owner
+  [OK] Valid owner with numbers
+  [OK] Reject empty owner
+  [OK] Reject owner > 8 chars
+
+=== Utility Function Tests ===
+  [OK] Format 1KB
+  [OK] Format 1MB
+  [OK] Format 1GB
+  [OK] Get timestamp not empty
+  [OK] Error to string
+  [OK] Error category - Volume
+  [OK] Error category - Dataset
+  [OK] Lock timeout is recoverable
+  [OK] Volume not found is not recoverable
+  [OK] Status to string - SCRATCH
+  [OK] String to status - PRIVATE
+  [OK] Density to string - LTO3
+  [OK] String to density - LTO8
+  [OK] LTO3 capacity
+  [OK] LTO9 capacity
+  [OK] To upper case
+  [OK] Trim whitespace
+  [OK] Prefix match
+  [OK] Suffix match
+  [OK] Contains match
+  [OK] Exact match
+  [OK] Wildcard match
+
+=== Volume Operations Tests ===
+  [OK] Add volume
+  [OK] Reject duplicate volume
+  [OK] Volume exists check
+  [OK] Volume not exists check
+  [OK] Volume count is 1
+  [OK] Get volume success
+  [OK] Get volume correct volser
+  [OK] Get non-existent volume fails
+  [OK] Mount volume
+  [OK] Reject double mount
+  [OK] Volume is mounted
+  [OK] Dismount volume
+  [OK] Reject dismount unmounted
+  [OK] List all volumes
+  [OK] List scratch volumes
+  [OK] List mounted volumes (empty)
+  [OK] Update volume
+  [OK] Volume updated correctly
+  [OK] Delete volume
+  [OK] Volume count is 0 after delete
+  [OK] Delete non-existent volume fails
+
+=== Dataset Operations Tests ===
+  [OK] Add dataset
+  [OK] Reject duplicate dataset
+  [OK] Dataset exists
+  [OK] Dataset count is 1
+  [OK] Volume now PRIVATE
+  [OK] Volume has 1 dataset
+  [OK] Get dataset success
+  [OK] Get dataset correct name
+  [OK] Migrate dataset
+  [OK] Dataset is migrated
+  [OK] Cannot migrate already migrated
+  [OK] Recall dataset
+  [OK] Delete dataset
+  [OK] Volume back to SCRATCH
+  [OK] Dataset count is 0
+
+=== Scratch Pool Tests ===
+  [OK] Scratch pool has 3 volumes
+  [OK] Scratch pool limit to 2
+  [OK] 3 available scratch
+  [OK] 3 total volumes
+  [OK] Allocate scratch volume
+  [OK] Allocated is PRIVATE
+  [OK] 2 scratch remaining
+  [OK] Return to scratch
+  [OK] 3 scratch after return
+  [OK] One pool exists
+  [OK] Pool name is POOL_A
+  [OK] Pool has 3 volumes
+  [OK] Pool has 3 scratch
+
+=== Expiration Tests ===
+  [OK] Dry run finds 2 expired
+  [OK] Dataset still active after dry run
+  [OK] Process 2 expirations
+  [OK] Dataset expired
+  [OK] Volume expired
+  [OK] 1 expired volume
+  [OK] 1 expired dataset
+
+=== Persistence Tests ===
+  [OK] Volume persisted
+  [OK] Volume location persisted
+  [OK] Volume owner persisted
+  [OK] Volume pool persisted
+  [OK] Dataset persisted
+  [OK] Dataset volume persisted
+
+=== Tagging Tests ===
+  [OK] Add volume tag
+  [OK] Add second tag
+  [OK] Volume has 'backup' tag
+  [OK] Volume has 'archive' tag
+  [OK] Find by tag
+  [OK] Find non-existent tag
+  [OK] Get all tags
+  [OK] Remove tag
+  [OK] Tag removed
+  [OK] Reject empty tag
+  [OK] Reject tag with space
+
+=== Batch Operations Tests ===
+  [OK] Batch add 5 succeeded
+  [OK] Batch add 0 failed
+  [OK] Batch all succeeded
+  [OK] 5 volumes after batch add
+  [OK] Batch delete 2 succeeded
+  [OK] Batch delete 1 failed
+  [OK] Not all succeeded
+  [OK] Success rate ~66%
+
+=== Volume Reservation Tests ===
+  [OK] Reserve volume
+  [OK] Volume is reserved
+  [OK] Reserved by correct user
+  [OK] Cannot reserve for different user
+  [OK] Extend reservation
+  [OK] Wrong user cannot release
+  [OK] Correct user can release
+  [OK] Volume no longer reserved
+  [OK] 1 reserved volume
+
+=== Search Tests ===
+  [OK] Search by owner
+  [OK] Search by pool
+  [OK] Search by location
+  [OK] Search with prefix
+  [OK] Search with owner filter
+  [OK] Search with limit
+
+=== Health Check Tests ===
+  [OK] Empty system is healthy
+  [OK] System with scratch volumes is healthy
+  [OK] Has volume metric
+  [OK] Has scratch metric
+  [OK] No integrity issues
+
+=== CSV Export/Import Tests ===
+  [OK] Export to CSV
+  [OK] Volumes CSV created
+  [OK] Datasets CSV created
+
+=== Regex Cache Tests ===
+  [OK] Wildcard match with cache
+  [OK] Wildcard match (cached)
+  [OK] Regex match with cache
+  [OK] Regex cache has entries
+  [OK] Regex cache cleared
+
+=== Audit Pruning Tests ===
+  [OK] Audit log has entries
+  [OK] No pruning yet for small log
+
+=== Secondary Index Tests ===
+  [OK] Index: 5 ADMIN volumes
+  [OK] Index: 5 USER volumes
+  [OK] Index: 3 POOL_A volumes
+  [OK] Index: 7 POOL_B volumes
+  [OK] 2 unique owners
+
+=== JSON Serialization Tests ===
+  [OK] Null value
+  [OK] Boolean value
+  [OK] Number value
+  [OK] String value
+  [OK] JSON serialization produces output
+  [OK] JSON contains expected value
+  [OK] Parsed JSON is object
+  [OK] Parsed value matches
+  [OK] Volume to JSON conversion
+  [OK] JSON to Volume conversion
+  [OK] Pool preserved in conversion
+
+=== Volume Groups Tests ===
+  [OK] Create volume group
+  [OK] Group exists after creation
+  [OK] Add volume to group
+  [OK] Group has 3 volumes
+  [OK] Get groups for volume
+  [OK] Remove volume from group
+  [OK] Group has 2 volumes after removal
+  [OK] Delete group
+  [OK] Group no longer exists
+
+=== Retention Policy Tests ===
+  [OK] Create retention policy
+  [OK] Policy exists
+  [OK] Get policy
+  [OK] Policy retention value correct
+  [OK] Expiration calculation correct
+  [OK] Policy assignment
+  [OK] List policies
+  [OK] Delete policy
+
+=== Report Generation Tests ===
+  [OK] Text report generated
+  [OK] Text report contains volume
+  [OK] HTML report generated
+  [OK] HTML report has HTML tags
+  [OK] HTML report contains volume
+  [OK] Markdown report generated
+  [OK] Markdown has table formatting
+  [OK] CSV report generated
+  [OK] CSV has comma separators
+  [OK] Statistics report generated
+  [OK] Stats report contains volume count
+
+=== Backup Manager Tests ===
+  [OK] Create backup
+  [OK] Backup path set
+  [OK] One backup exists
+  [OK] Get latest backup
+  [OK] Daily backup check works
+
+=== Event System Tests ===
+  [OK] Subscriber registered
+  [OK] Event handler called
+  [OK] Event in history
+  [OK] Get events by type
+  [OK] Handler not called after unsubscribe
+  [OK] Filter rejects non-matching severity
+  [OK] Filter accepts matching severity
+
+=== Statistics History Tests ===
+  [OK] 5 snapshots recorded
+  [OK] Get latest snapshot
+  [OK] Latest snapshot has correct data
+  [OK] Get recent snapshots
+  [OK] Trend has 5 samples
+  [OK] Trend direction is UP
+  [OK] Capacity projection generated
+  [OK] Daily averages calculated
+  [OK] History cleared
+
+=== Integrity Checker Tests ===
+  [OK] 1 volume checked
+  [OK] 1 dataset checked
+  [OK] Integrity check passed
+  [OK] Report generated
+  [OK] Integrity check passed
+
+=== Query Engine Tests ===
+  [OK] QueryBuilder creates conditions
+  [OK] Query returns 3 POOL_A volumes
+  [OK] Query returns 5 scratch volumes
+  [OK] Query returns 5 ADMIN volumes
+  [OK] Query syntax help available
+  [OK] Field names available
+  [OK] Save query
+  [OK] Retrieve saved query
+
+=== Volume Cloning Tests ===
+  [OK] Clone volume success
+  [OK] Cloned volume exists
+  [OK] Pool preserved in clone
+  [OK] Owner preserved in clone
+  [OK] Clone starts as scratch
+  [OK] Tags preserved in clone
+  [OK] Clone to existing volser fails
+
+=== Bulk Tagging Tests ===
+  [OK] Bulk add tag succeeded for 3 volumes
+  [OK] Volume 1 has bulk tag
+  [OK] Volume 4 does not have bulk tag
+  [OK] Bulk remove tag succeeded for 3 volumes
+  [OK] Volume 1 no longer has bulk tag
+
+=== Pool Management Tests ===
+  [OK] Rename pool success
+  [OK] Volume pool updated after rename
+  [OK] Merge pools success
+  [OK] Volume moved to target pool
+  [OK] Pool has all 5 volumes after merge
+
+=== Volume Snapshots Tests ===
+  [OK] Create snapshot success
+  [OK] Snapshot ID generated
+  [OK] Snapshot has correct volser
+  [OK] Snapshot captured tags
+  [OK] One snapshot exists
+  [OK] Snapshot count is 1
+  [OK] Delete snapshot success
+  [OK] Snapshot count is 0 after delete
+
+=== Volume Health Tests ===
+  [OK] Healthy volume has high score
+  [OK] Healthy volume has good status
+  [OK] Unhealthy volume has low score
+  [OK] Recalculated 2 volumes
+  [OK] All recalculations succeeded
+
+=== Fuzzy Search Tests ===
+  [OK] Fuzzy search found exact match
+  [OK] Fuzzy search found with typo
+  [OK] Fuzzy search with high threshold
+
+=== Lifecycle Recommendations Tests ===
+  [OK] Got lifecycle recommendations
+  [OK] Recommendations sorted by priority
+
+=== Location History Tests ===
+  [OK] Location history has entries
+
+=== Pool Migration Tests ===
+  [OK] Move single volume success
+  [OK] Volume moved to target pool
+  [OK] Batch move succeeded for 2 volumes
+  [OK] Target pool has 3 volumes
+
+=== Health Report Tests ===
+  [OK] Health report has header
+  [OK] Health report mentions lifecycle
+
+=== Encryption Metadata Tests ===
+  [OK] Set encryption success
+  [OK] Volume is encrypted
+  [OK] Algorithm is AES-256
+  [OK] Key ID matches
+  [OK] Found 1 encrypted volume
+  [OK] Found 1 unencrypted volume
+
+=== Storage Tiering Tests ===
+  [OK] Default tier is HOT
+  [OK] Set tier success
+  [OK] Tier is now COLD
+  [OK] Found 1 COLD volume
+
+=== Quota Management Tests ===
+  [OK] Set pool quota success
+  [OK] Pool quota exists
+  [OK] Max bytes correct
+  [OK] Set owner quota success
+  [OK] Quota available for small addition
+
+=== Audit Export Tests ===
+  [OK] JSON export has array
+  [OK] JSON contains ADD_VOLUME
+  [OK] CSV has header
+  [OK] TEXT export not empty
+
+=== Configuration Profiles Tests ===
+  [OK] Save profile success
+  [OK] Profile exists
+  [OK] Description matches
+  [OK] Found 1 profile
+  [OK] Delete profile success
+  [OK] No profiles after delete
+
+=== Statistics Aggregation Tests ===
+  [OK] Capacity stats has 10 samples
+  [OK] Min capacity correct
+  [OK] Max capacity correct
+  [OK] Mount stats has 10 samples
+  [OK] Min mount count correct
+  [OK] Max mount count correct
+  [OK] Health stats has 10 samples
+
+=== Parallel Batch Operations Tests ===
+  [OK] Parallel add total is 20
+  [OK] All parallel adds succeeded
+  [OK] No parallel add failures
+  [OK] 20 volumes exist
+  [OK] Parallel delete succeeded for 10
+  [OK] 10 volumes remain
+
+=== Error Recovery Tests ===
+  [OK] Max attempts is 3
+  [OK] Initial delay is 10ms
+  [OK] Retry operation succeeded
+  [OK] Only 1 attempt needed
+  [OK] Operation called once
+  [OK] Retry operation failed
+  [OK] Made 3 attempts
+  [OK] Operation called 3 times
+  [OK] Required retry
+
+========================================
+  Total:  320 tests
+  Passed: 320
+  Failed: 0
+  Time:   95ms
+========================================
+
+*** ALL TESTS PASSED ***
+
+<end of output>
+Test time =   0.28 sec
+----------------------------------------------------------
+Test Passed.
+"TMS_Tests" end time: Jan 09 07:01 Central Standard Time
+"TMS_Tests" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Jan 09 07:01 Central Standard Time

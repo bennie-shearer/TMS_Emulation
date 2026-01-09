@@ -1,0 +1,21 @@
+# ninja log v6
+12	1239	7896634984475105	CMakeFiles/tms_lib.dir/src/configuration.cpp.obj	482762ae4ed46e9f
+27	2504	7896634984620533	CMakeFiles/basic_usage.dir/examples/basic_usage.cpp.obj	193f54d998a181bf
+12258	19037	7896635106943333	basic_usage.exe	7720b59fffef0422
+7	1628	7896634984429979	CMakeFiles/tms_lib.dir/src/logger.cpp.obj	9c9235f446637451
+22	7143	7896634984575204	CMakeFiles/test_tms.dir/tests/test_tms.cpp.obj	bf55d80ef065ff17
+17	2647	7896634984528195	CMakeFiles/tms.dir/src/tms_main.cpp.obj	3d66676c29b9152b
+1	6679	7896634984369974	CMakeFiles/tms_lib.dir/src/tms_tape_mgmt.cpp.obj	f83410ca87986657
+6680	12243	7896635051147745	libtms_lib.a	5bde751e0f690deb
+12243	19095	7896635106793249	tms.exe	c5a379477004ba3a
+12251	26878	7896635106868306	test_tms.exe	8fdf206f17104e9d
+15	1160	7896668375516558	CMakeFiles/tms_lib.dir/src/configuration.cpp.obj	6c68fdb544f19b8b
+11	1575	7896668375466546	CMakeFiles/tms_lib.dir/src/logger.cpp.obj	e4252b2414566e6b
+30	2490	7896668375658738	CMakeFiles/basic_usage.dir/examples/basic_usage.cpp.obj	666d668f939c9108
+21	2623	7896668375568736	CMakeFiles/tms.dir/src/tms_main.cpp.obj	d4f194b060369dd2
+5	6523	7896668375411387	CMakeFiles/tms_lib.dir/src/tms_tape_mgmt.cpp.obj	4be86d7ac2064eee
+25	6972	7896668375608730	CMakeFiles/test_tms.dir/tests/test_tms.cpp.obj	8f26f449cf918bc2
+6523	11977	7896668440593939	libtms_lib.a	5bde751e0f690deb
+11992	18690	7896668495279209	basic_usage.exe	7720b59fffef0422
+11977	18783	7896668495131852	tms.exe	c5a379477004ba3a
+11985	26339	7896668495208788	test_tms.exe	8fdf206f17104e9d

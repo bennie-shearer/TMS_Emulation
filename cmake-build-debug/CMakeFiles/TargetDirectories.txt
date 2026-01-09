@@ -1,0 +1,11 @@
+C:/Users/Benni/CLionProjects/TMS_Emulation/cmake-build-debug/CMakeFiles/tms_lib.dir
+C:/Users/Benni/CLionProjects/TMS_Emulation/cmake-build-debug/CMakeFiles/tms.dir
+C:/Users/Benni/CLionProjects/TMS_Emulation/cmake-build-debug/CMakeFiles/test_tms.dir
+C:/Users/Benni/CLionProjects/TMS_Emulation/cmake-build-debug/CMakeFiles/basic_usage.dir
+C:/Users/Benni/CLionProjects/TMS_Emulation/cmake-build-debug/CMakeFiles/test.dir
+C:/Users/Benni/CLionProjects/TMS_Emulation/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/Benni/CLionProjects/TMS_Emulation/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+C:/Users/Benni/CLionProjects/TMS_Emulation/cmake-build-debug/CMakeFiles/list_install_components.dir
+C:/Users/Benni/CLionProjects/TMS_Emulation/cmake-build-debug/CMakeFiles/install.dir
+C:/Users/Benni/CLionProjects/TMS_Emulation/cmake-build-debug/CMakeFiles/install/local.dir
+C:/Users/Benni/CLionProjects/TMS_Emulation/cmake-build-debug/CMakeFiles/install/strip.dir

@@ -1,0 +1,88 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-d885ae53783593ded618.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "TMS_Emulation",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "basic_usage::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-basic_usage-Debug-c7e7470023fd23ed1ad4.json",
+					"name" : "basic_usage",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "test_tms::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-test_tms-Debug-935b62d49ac4cb4d6010.json",
+					"name" : "test_tms",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "tms::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-tms-Debug-f6d66dde53503741178e.json",
+					"name" : "tms",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "tms_lib::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-tms_lib-Debug-9993aaafde21555bb3d7.json",
+					"name" : "tms_lib",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Users/Benni/CLionProjects/TMS_Emulation/cmake-build-debug",
+		"source" : "C:/Users/Benni/CLionProjects/TMS_Emulation"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 7
+	}
+}
